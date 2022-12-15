@@ -1,67 +1,42 @@
-body
+#image1
 {
-    background-color: grey;
-}
-
-#titre
-{
-    background-image: './/Pic/image1';
-}
-
-#sary1
-{
-    /* margin-top: -300px; */
-    width: 1000px;
-}
-
-#title1
-{
-    margin-top: -500px;
-}
-
-#title3
-{
-    margin-top: 420px;
-}
-
-#detail
-{
-    margin-left: 150px;
-    display: inline-block;
-}
-
-#cadre1
-{
-    width: 250px;
-    height: 350px;
-    background-color: white;
+    border-radius: 15px;
 }
 
 #texte1
 {
     margin-top: -15px;
 }
-
-#texteGris
+#textegris
 {
-    margin-top: -10px;
-    color: grey;
+    margin-top: -15px;
 }
 
-#detail1
+#prix
 {
-    margin-left: 75px;
+    margin-top: -15px;
+}
+
+#cadre1
+{
+    margin-left: 250px;
     display: inline-block;
 }
 
-#detail2
+#cadre2
 {
-    margin-left: 75px;
     display: inline-block;
+    margin-left: 50px;
 }
 
-#detail3
+#cadre3
 {
-    margin-left: 75px;
     display: inline-block;
+    margin-left: 50px;
+}
+
+#cadre4
+{
+    display: inline-block;
+    margin-left: 50px;
 }
