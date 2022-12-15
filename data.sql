@@ -1,4 +1,5 @@
 create user immobilier identified by immobilier;
+grant dba to immobilier;
 
 -- User
 create table user(
