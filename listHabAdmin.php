@@ -17,6 +17,8 @@
         <p id="title4">Discover beautiful homies with all the comforts of home.</p>
     </div>
 
+
+<div id="list">
     <div id="detail">
         <div id="cadre1">
             <div id="sary2"><img src="Pic/image1.jpg" width="250px" height ="250px"></div>
@@ -25,9 +27,28 @@
                 <p>Proposé par Annemien</p>
                 <div id="texteGris"><p>5-10 Octobre.Professionnel</p></div>
             </div>
-
+        </div>
+    </div>
+    <div id="detail1">
+            <div id="sary2"><img src="Pic/image1.jpg" width="250px" height ="250px"></div>
+            <div id="texte1"><p>Stellenbosch,Afrique du Sud</p></div>
+            <div id="texteGris">
+                <p>Proposé par Annemien</p>
+                <div id="texteGris"><p>5-10 Octobre.Professionnel</p></div>
+            </div>
+        </div>
+    </div>
+    <div id="detail2">
+        <div id="cadre1">
+            <div id="sary2"><img src="Pic/image1.jpg" width="250px" height ="250px"></div>
+            <div id="texte1"><p>Stellenbosch,Afrique du Sud</p></div>
+            <div id="texteGris">
+                <p>Proposé par Annemien</p>
+                <div id="texteGris"><p>5-10 Octobre.Professionnel</p></div>
+            </div>
         </div>
         
     </div>
+</div>
 </body>
 </html>
