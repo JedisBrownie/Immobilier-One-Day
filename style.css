@@ -1,0 +1,15 @@
+body
+{
+    background-color: grey;
+}
+
+#titre
+{
+    background-image: './/Pic/image1';
+}
+
+#sary1
+{
+    /* margin-top: -300px; */
+    width: 1000px;
+}
