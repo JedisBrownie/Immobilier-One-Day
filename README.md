@@ -29,6 +29,7 @@ Modules :
         *login
         *inscription
         *select habitations
+        *recherche habitation
         *
 
 
