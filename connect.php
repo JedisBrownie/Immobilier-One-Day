@@ -17,5 +17,18 @@
     //     echo $th;
     // }
     
+    $user ='postgres';
+    $mdp = 'root';
+    $dsn = 'pgsql:host=localhost;port=5432;dbname=immobilier';
+
+    try 
+    {
+        $data = new PDO($dsn,$user,$mdp);
+    } 
+    catch (PDOException $e) 
+    {
+        print "Erreur ! : " . $e->getMessage();
+        die();
+    }
             
 ?>
