@@ -30,6 +30,7 @@
         </div>
     </div>
     <div id="detail1">
+        <div id="cadre1">
             <div id="sary2"><img src="Pic/image1.jpg" width="250px" height ="250px"></div>
             <div id="texte1"><p>Stellenbosch,Afrique du Sud</p></div>
             <div id="texteGris">
