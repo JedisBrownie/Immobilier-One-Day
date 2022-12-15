@@ -7,14 +7,28 @@
     // {
     //     echo $th;
     // }   
+    // try 
+    // {
+    //     $ODBCConnection = odbc_connect("Driver={Devart ODBC driver for Oracle};Direct=true;Host=localhost;Port=1521;Service_Name=orcl;User_ID=CLRExtProc;password=Mdpprom2", "immobilier", "immobilier");
+    //     echo $ODBCConnection;
+    // } 
+    // catch (\Throwable $th) 
+    // {
+    //     echo $th;
+    // }
+    
+    $user ='postgres';
+    $mdp = 'root';
+    $dsn = 'pgsql:host=localhost;port=5432;dbname=immobilier';
+
     try 
     {
-        $ODBCConnection = odbc_connect("Driver={Devart ODBC driver for Oracle};Direct=true;Host=localhost;Port=1521;Service_Name=orcl;User_ID=CLRExtProc;password=Mdpprom2", "immobilier", "immobilier");
-        echo $ODBCConnection;
+        $data = new PDO($dsn,$user,$mdp);
     } 
-    catch (\Throwable $th) 
+    catch (PDOException $e) 
     {
-        echo $th;
+        print "Erreur ! : " . $e->getMessage();
+        die();
     }
-    
+            
 ?>
