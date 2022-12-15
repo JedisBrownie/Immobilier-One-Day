@@ -1,0 +1,43 @@
+body
+{
+    background-color: grey;
+}
+
+#titre
+{
+    background-image: './/Pic/image1';
+}
+
+#sary1
+{
+    /* margin-top: -300px; */
+    width: 1000px;
+}
+
+#title1
+{
+    margin-top: -500px;
+}
+
+#title3
+{
+    margin-top: 420px;
+}
+
+#cadre1
+{
+    width: 250px;
+    height: 350px;
+    background-color: white;
+}
+
+#texte1
+{
+    margin-top: -15px;
+}
+
+#texteGris
+{
+    margin-top: -10px;
+    color: grey;
+}
