@@ -23,11 +23,13 @@ Modules :
         *details habitations (detailedHab.php)
             ==> Ty a, tsy hoe page ray habitation ray, fa page ray mandray donnee ana habitation bdb. Ohatra hoe ra habitation 2 no clikeko de details habitation 2 zany io. R habitation 4 no clikeko de details habitation 4 zany no mipotra eo. Etc, etc <3
         *reservation (Ao amle page details ihany no misy bouton reservation)
+        *recherche habitaion (ao amle page details ko)
 
     Functions :
         *login
         *inscription
         *select habitations
+        *
 
 
     
