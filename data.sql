@@ -20,6 +20,8 @@ create table habitation
     Douche int , 
     Toilette int,
     Balcon int,
+    loyer int,
+    host varchar(20),
     HousePic varchar(20),
     Constraint id_Habitation PRIMARY KEY(idHabitation)
 );
@@ -63,27 +65,27 @@ INSERT INTO USERS(Nom,Mdp,Email,estAdmin)
 VALUES('Paul','paul123456','paul@gamil.com',1);
 
 -------------INSERTION HABITAION--------------
-INSERT INTO HABITATION(Quartier,Salon,Chambre,Douche,Toilette,Balcon,HousePic) 
-VALUES('Analakely',1,4,1,2,2,null);
-INSERT INTO HABITATION(Quartier,Salon,Chambre,Douche,Toilette,Balcon,HousePic) 
-VALUES('Behoririka',2,5,1,1,1,null);
-INSERT INTO HABITATION(Quartier,Salon,Chambre,Douche,Toilette,Balcon,HousePic) 
-VALUES('Itaosy',1,1,1,1,1,null);
-INSERT INTO HABITATION(Quartier,Salon,Chambre,Douche,Toilette,Balcon,HousePic) 
-VALUES('Andraharo',1,3,1,1,1,null);
-INSERT INTO HABITATION(Quartier,Salon,Chambre,Douche,Toilette,Balcon,HousePic) 
-VALUES('Adoharanofotsy',2,2,4,2,2,null);
+INSERT INTO HABITATION(Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic) 
+VALUES('Analakely',1,4,1,2,2, 700, 'Michel', null);
+INSERT INTO HABITATION(Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic) 
+VALUES('Behoririka',2,5,1,1,1, 584, 'Kareen', null);
+INSERT INTO HABITATION(Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic) 
+VALUES('Itaosy',1,1,1,1,1, 900, 'Jean', null);
+INSERT INTO HABITATION(Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic) 
+VALUES('Andraharo',1,3,1,1,1, 806, 'Richard', null);
+INSERT INTO HABITATION(Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic) 
+VALUES('Adoharanofotsy',2,2,4,2,2, 659, 'Loic', null);
 
-INSERT INTO HABITATION (Quartier,Salon,Chambre,Douche,Toilette,Balcon,HousePic)
-VALUES('Ankadidramama',1,2,1,2,2,null);
-INSERT INTO HABITATION (Quartier,Salon,Chambre,Douche,Toilette,Balcon,HousePic)
-VALUES('Ankorondrano',1,5,2,2,2,null);
-INSERT INTO HABITATION (Quartier,Salon,Chambre,Douche,Toilette,Balcon,HousePic)
-VALUES('Ankadifotsy',1,1,1,1,1,null);
-INSERT INTO HABITATION (Quartier,Salon,Chambre,Douche,Toilette,Balcon,HousePic)
-VALUES('Anosizato',2,2,2,2,1,null);
-INSERT INTO HABITATION (Quartier,Salon,Chambre,Douche,Toilette,Balcon,HousePic)
-VALUES('Ambohimiadana',1,1,2,2,1,null);
+INSERT INTO HABITATION (Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic)
+VALUES('Ankadidramama',1,2,1,2,2, 690, 'Paul', null);
+INSERT INTO HABITATION (Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic)
+VALUES('Ankorondrano',1,5,2,2,2, 870, 'Anna', null);
+INSERT INTO HABITATION (Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic)
+VALUES('Ankadifotsy',1,1,1,1,1, 508, 'Chris', null);
+INSERT INTO HABITATION (Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic)
+VALUES('Anosizato',2,2,2,2,1, 686, 'Lory', null);
+INSERT INTO HABITATION (Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic)
+VALUES('Ambohimiadana',1,1,2,2,1, 847, 'Romuald', null);
 
 --------------------INSERT RESERVATION-------------
 INSERT INTO RESERVATION(idHabitation,idUser,DateDebutReservation,DateFinReservation)
