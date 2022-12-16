@@ -26,8 +26,8 @@ create table habitation
 -- Reservation
 create table reservation
 (
-    idReservation serial
-    idHabitation varchar(20),
+    idReservation serial,
+    idHabitation int,
     idUser int,
     DateDebutReservation date,
     DateFinReservation date,
