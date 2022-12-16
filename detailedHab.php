@@ -11,7 +11,7 @@
     <div id="menu">
         <div id="logo"><img src="Pic/th.jpg" width="100px" heigth="75px"></div>
         <div id="recherche">
-            <form action="treatRecherche.php">
+            <form action="treatReservation.php">
                 <input type="text" placeholder="Commencez votre recherche">
                 <input type="submit" value="Cliquez ici">
             </form>
