@@ -1,10 +1,8 @@
 <?php 
     include('function.php');
 ?>
-
 <?php 
     session_start();
-
     $idUser = $_GET['idUser'];
     $idHabitation = $_GET['idHabitation'];
     $picture = $_GET['pic'];
