@@ -23,22 +23,28 @@
 
 #reservation
 {
-    width: 500px;
-    background-color: grey;
+    width: 290px;
+    float: right;
+    margin-right: 1090px;
+    margin-top: -30px;
 }
 
 #arrive
 {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
     display: inline-block;
+    border: 1px solid black;
 }
 
-#arrive-
-{
-    margin-left: 10px;
-}
 
 #depart
 {
-    margin-left: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+    margin-left: -5px;
     display: inline-block;
 }
