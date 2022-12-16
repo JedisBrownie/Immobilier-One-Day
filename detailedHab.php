@@ -51,7 +51,7 @@
 
             <div id="reservation">
                 <form action="treatReserv.php">
-                <div id="prix">120 Euro par nuit</div>
+                <div id="prix"><?php echo $fetchHabitation['loyer']?> Euro par nuit</div>
                 <br>
                 <div id="arrive">
                     <p>Arrive</p>
