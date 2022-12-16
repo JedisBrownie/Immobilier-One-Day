@@ -32,7 +32,9 @@
             <div id="detail"><p>1 Chambre. 1 lit. 1 salle de bain et 1 toilette</p></div>
 
             <div id="reservation">
+                <form action="treatReserv.php">
                 <div id="prix">120 Euro par nuit</div>
+                <br>
                 <div id="arrive">
                     <p>Arrive</p>
                     <input type="date" name="datearrive" id="datearrive">
@@ -41,8 +43,9 @@
                     <p>Depart</p>
                     <input type="date" name="datedepart" id="datedepart">
                 </div>
+                <div id="but"><input type="submit" value="Reservez"></div>
             </div>
-
+            </form>
         </div>
 </body>
 </html>
