@@ -35,6 +35,16 @@
 
         return $query;
     }
+    function listHabCustom($idHabitation)
+    {
+        $co = connect();
+
+        $request = "select * from habitation where idhabitation = ".$idHabitation;
+        // $sprintf = sprintf($request, $idHabitation);
+        $query = pg_query($co, $request);
+
+        return $query;
+    }
 
     // Insert Reservation
     function reservation($idHab, $idUser, $nbLocataire, $startDate, $endDate)

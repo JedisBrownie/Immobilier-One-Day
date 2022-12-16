@@ -8,7 +8,6 @@
     session_start();
 
     $idUser = $_GET['idUser'];
-    echo $idUser;
 ?>
 
 <!DOCTYPE html>
