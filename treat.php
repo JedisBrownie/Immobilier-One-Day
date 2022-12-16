@@ -16,13 +16,18 @@
 
     $idUser = $assoc['iduser'];
 
-    if ($assoc == null) 
+    if ($assoc == null  ) 
     {
         header('Location: index.php');
     }
 
-    if ($assoc != null) 
+    if ($assoc != null ) 
     {
+        if ($assoc['estadmin'] == 0){
         header('Location: home.php?idUser='.$idUser);
+        }
+        if ($assoc['estadmin'] == 1){
+            header('Location: homeAdmin.php?idUser='.$idUser);
+            }
     }
 ?>
