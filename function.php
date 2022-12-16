@@ -35,4 +35,10 @@
 
         return $query;
     }
+
+    // Reservation
+    function reservation()
+    {
+        
+    }
 ?>

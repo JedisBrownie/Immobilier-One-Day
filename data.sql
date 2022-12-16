@@ -32,6 +32,7 @@ create table reservation
     idReservation serial,
     idHabitation int,
     idUser int,
+    nbLocataire int,
     DateDebutReservation date,
     DateFinReservation date,
     FOREIGN KEY(idHabitation)REFERENCES habitation(idHabitation),
@@ -88,13 +89,13 @@ INSERT INTO HABITATION (Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host
 VALUES('Ambohimiadana',1,1,2,2,1, 847, 'Romuald', null);
 
 --------------------INSERT RESERVATION-------------
-INSERT INTO RESERVATION(idHabitation,idUser,DateDebutReservation,DateFinReservation)
-VALUES('1','3','12/06/2022','12/12/2022');
-INSERT INTO RESERVATION (idHabitation,idUser,DateDebutReservation,DateFinReservation)
-VALUES('2','5','12/12/2022','12/13/2022');
-INSERT INTO RESERVATION (idHabitation,idUser,DateDebutReservation,DateFinReservation)
-VALUES('5','4','12/25/2022','12/31/2022');
-INSERT INTO RESERVATION (idHabitation,idUser,DateDebutReservation,DateFinReservation)
-VALUES('9','6','11/25/2022','11/30/2022');
-INSERT INTO RESERVATION (idHabitation,idUser,DateDebutReservation,DateFinReservation)
-VALUES('7','7','10/01/2022','11/11/2022');
+INSERT INTO RESERVATION(idHabitation,idUser,nbLocataire,DateDebutReservation,DateFinReservation)
+VALUES('1','3', 3, '12/06/2022','12/12/2022');
+INSERT INTO RESERVATION (idHabitation,idUser,nbLocataire,DateDebutReservation,DateFinReservation)
+VALUES('2','5', 1, '12/12/2022','12/13/2022');
+INSERT INTO RESERVATION (idHabitation,idUser,nbLocataire,DateDebutReservation,DateFinReservation)
+VALUES('5','4', 2, '12/25/2022','12/31/2022');
+INSERT INTO RESERVATION (idHabitation,idUser,nbLocataire,DateDebutReservation,DateFinReservation)
+VALUES('9','6', 2, '11/25/2022','11/30/2022');
+INSERT INTO RESERVATION (idHabitation,idUser,nbLocataire,DateDebutReservation,DateFinReservation)
+VALUES('7','7',4 ,'10/01/2022','11/11/2022');
