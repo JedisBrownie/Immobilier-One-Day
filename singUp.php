@@ -12,6 +12,7 @@
             <div class="form">
                 <h2>Sing Up</h2>
                 <div class="inputBox">
+                    <form action="treatSingUp.php" method="post">
                             <input type="text" required="required" name="nom">
                             <span>Username</span>
                             <i></i>
@@ -25,7 +26,7 @@
 
                         <div class="inputBox">
                             <input type="email" required="required" name="mail">
-                            <span>Password</span>
+                            <span>Mail</span>
                             <i></i>
                         </div>
                         
@@ -33,6 +34,7 @@
                         <div class="links">
                             <a href="index.php">RETURN</a>
                         </div>
+                    </form>
             </div>
     </div>
 </body>
