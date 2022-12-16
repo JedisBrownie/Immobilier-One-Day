@@ -36,4 +36,17 @@
         return $query;
     }
 
+    // Reservation
+    function reservation($idHab, $idUser, $nbLocataire, $startDate, $endDate)
+    {
+        $co = connect();
+
+        $request = "insert into reservation values('%i', '%i', '%i', '%s', '%')";
+        $sprintf = sprintf($request, $idHab, $idUser, $nbLocataire, $startDate, $endDate);
+
+        $query = pg_query($co, $sprintf);
+        $fetch = pg_fetch_assoc($query);
+
+        return $fetch;
+    }
 ?>

@@ -1,0 +1,67 @@
+div a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#ajouter
+{
+    margin-top: 10px;
+    float: right;
+    border: 1px solid pink;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+
+    font-family: gilroy;
+}
+
+
+#ajouter :hover
+{
+
+    background-color: pink;
+}
+
+#image1
+{
+    border-radius: 15px;
+}
+
+#texte1
+{
+    margin-top: -15px;
+}
+#textegris
+{
+    margin-top: -15px;
+}
+
+#prix
+{
+    margin-top: -15px;
+}
+
+#cadre1
+{
+    margin-left: 250px;
+    display: inline-block;
+}
+
+#cadre2
+{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+#cadre3
+{
+    display: inline-block;
+    margin-left: 50px;
+}
+
+#cadre4
+{
+    display: inline-block;
+    margin-left: 50px;
+}
