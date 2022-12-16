@@ -8,13 +8,13 @@
     $loyer = $_GET['loyer'];
 
     $_SESSION['datearrive'] = $_POST['datearrive'];
-    $_SESSION['datepart'] = $_POST['datepart'];
+    $_SESSION['datedepart'] = $_POST['datedepart'];
     $_SESSION['locataires'] = $_POST['locataires'];
 
         $datearrive = $_SESSION['datearrive'];
-        $datepart = $_SESSION['datepart'];
+        $datedepart = $_SESSION['datedepart'];
         $locataires = $_SESSION['locataires'];
 
-    $query = reservation($idHabitation, $idUser, $locataires, $datearrive, $datepart);
+    $query = reservation($idHabitation, $idUser, $locataires, $datearrive, $datedepart);
     var_dump($query);
 ?>

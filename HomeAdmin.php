@@ -23,7 +23,7 @@
         <div id="listHab">
             <?php while ($fetch = pg_fetch_assoc($query)) { ?>
             <div class="cadre">
-                <div class="image1"><a href="detailedHab.php"><img src="Pic/<?php echo $fetch['housepic']; ?>" width="250" height="200"></a></div>
+                <div class="image1"><a href="detailedHab.php?idUser=<?php echo $idUser ?>&idHabitation=<?php echo $fetch['idhabitation']; ?>&pic=<?php echo $fetch['housepic']; ?>&quartier=<?php echo $fetch['quartier']; ?>&host=<?php echo $fetch['host']; ?>&loyer=<?php echo $fetch['loyer']; ?>"><img src="Pic/<?php echo $fetch['housepic']; ?>" width="250" height="200"></a></div>
                 <br>
                 <div class="texte1"><?php echo $fetch['quartier']; ?></div>
                 <br>

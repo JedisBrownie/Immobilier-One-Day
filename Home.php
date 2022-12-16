@@ -35,7 +35,7 @@
                 <div class="textegris"><?php echo $fetch['host']; ?></div>
                 <br>
                 <div class="prix">$<?php echo $fetch['loyer']; ?></div>
-
+                
             </div>
             <?php } ?>
         </div>
