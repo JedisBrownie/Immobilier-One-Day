@@ -37,8 +37,8 @@
                 <br>
                 <div class="prix"><?php echo $fetch['loyer']; ?></div>
                 <div id="button">
-                    <div id="modify"><a href="">Modify</a></div>
-                    <div id="modify"><a href="">Delete</a></div>
+                    <div id="modify"><a href="modify.php">Modify</a></div>
+                    <div id="modify"><a href="delete.php">Delete</a></div>
                 </div>
             </div>
             <?php } ?>
