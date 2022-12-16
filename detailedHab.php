@@ -1,5 +1,4 @@
 <?php 
-    require('connect.php');
     include('function.php');
 ?>
 
@@ -7,6 +6,11 @@
     session_start();
 
     $idUser = $_GET['idUser'];
+    $idHabitation = $_GET['idHabitation'];
+    $picture = $_GET['pic'];
+    $quartier = $_GET['quartier'];
+    $host = $_GET['host'];
+    $loyer = $_GET['loyer'];
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +37,7 @@
         <div id="contenu">
             <div id="titre"><h2>Chambre d'hote de luxe deux fois centrale avec balcon</h2></div>
             <div id="saryList">
-                <div id="sary1"><img src="Pic/" width="400px" height = "400px"></div>
+                <div id="sary1"><img src="Pic/<?php echo $picture; ?>" width="400px" height = "400px"></div>
                 <div id="sarykely">
                 <div id="sary2"><img src="Pic/sary2.jpg" width="205px" height ="205px"></div>
                 <div id="sary2"><img src="Pic/sary2.jpg" width="205px" height ="205px"></div>

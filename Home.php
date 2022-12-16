@@ -26,72 +26,11 @@
         <hr>
         <h2 id="titre1"> <center> Homes around the World </center></h2>
         <h1 id="titre2"> <center> Discover beautiful houses with all the comfort of home. </center></h1>
-        <!-- <div id="list1">
-            <div id="cadre1">
-                <div id="image1"><a href="detailedHab.php"><img src="Pic/image1.jpg" width="250px" height="200px"></a></div>
-                <div id="texte1"><p>Stellenbosch,Afrique du Sud</p></div>
-                <div id="textegris"><p>Propose par Annemien</p></div>
-                <div id="textegris"><p>5-10 avr .Professionnel</p></div>
-                <div id="prix">144£ par nuit</div>
-            </div>
-            <div id="cadre2">
-                <div id="image1"><a href="detailedHab.php"><img src="Pic/image1.jpg" width="250px" height="200px"></a></div>
-                <div id="texte1"><p>Stellenbosch,Afrique du Sud</p></div>
-                <div id="textegris"><p>Propose par Annemien</p></div>
-                <div id="textegris"><p>5-10 avr .Professionnel</p></div>
-                <div id="prix">144£ par nuit</div>
-            </div>
-            <div id="cadre3">
-                <div id="image1"><a href="detailedHab.php"><img src="Pic/image1.jpg" width="250px" height="200px"></a></div>
-                <div id="texte1"><p>Stellenbosch,Afrique du Sud</p></div>
-                <div id="textegris"><p>Propose par Annemien</p></div>
-                <div id="textegris"><p>5-10 avr .Professionnel</p></div>
-                <div id="prix">144£ par nuit</div>
-            </div>
-            <div id="cadre4">
-                <div id="image1"><a href="detailedHab.php"><img src="Pic/image1.jpg" width="250px" height="200px"></a></div>
-                <div id="texte1"><p>Stellenbosch,Afrique du Sud</p></div>
-                <div id="textegris"><p>Propose par Annemien</p></div>
-                <div id="textegris"><p>5-10 avr .Professionnel</p></div>
-                <div id="prix">144£ par nuit</div>
-            </div>
-        </div>
-        <br>
-        <br>
-        <div id="list2">
-            <div id="cadre1">
-                <div id="image1"><a href="detailedHab.php"><img src="Pic/image1.jpg" width="250px" height="200px"></a></div>
-                <div id="texte1"><p>Stellenbosch,Afrique du Sud</p></div>
-                <div id="textegris"><p>Propose par Annemien</p></div>
-                <div id="textegris"><p>5-10 avr .Professionnel</p></div>
-                <div id="prix">144£ par nuit</div>
-            </div>
-            <div id="cadre2">
-                <div id="image1"><a href="detailedHab.php"><img src="Pic/image1.jpg" width="250px" height="200px"></a></div>
-                <div id="texte1"><p>Stellenbosch,Afrique du Sud</p></div>
-                <div id="textegris"><p>Propose par Annemien</p></div>
-                <div id="textegris"><p>5-10 avr .Professionnel</p></div>
-                <div id="prix">144£ par nuit</div>
-            </div>
-            <div id="cadre3">
-                <div id="image1"><a href="detailedHab.php"><img src="Pic/image1.jpg" width="250px" height="200px"></a></div>
-                <div id="texte1"><p>Stellenbosch,Afrique du Sud</p></div>
-                <div id="textegris"><p>Propose par Annemien</p></div>
-                <div id="textegris"><p>5-10 avr .Professionnel</p></div>
-                <div id="prix">144£ par nuit</div>
-            </div>
-            <div id="cadre4">
-                <div id="image1"><a href="detailedHab.php"><img src="Pic/image1.jpg" width="250px" height="200px"></a></div>
-                <div id="texte1"><p>Stellenbosch,Afrique du Sud</p></div>
-                <div id="textegris"><p>Propose par Annemien</p></div>
-                <div id="textegris"><p>5-10 avr .Professionnel</p></div>
-                <div id="prix">144£ par nuit</div>
-            </div>
-        </div> -->
+      
         <div id="listHab">
             <?php while ($fetch = pg_fetch_assoc($query)) { ?>
             <div class="cadre">
-                <div class="image1"><a href="detailedHab.php?idUser=<?php echo $idUser ?>&pic=<?php echo $fetch['housepic']; ?>&quartier=<?php echo $fetch['quartier']; ?>&host=<?php echo $fetch['host']; ?>&loyer=<?php echo $fetch['loyer']; ?>"><img src="Pic/<?php echo $fetch['housepic']; ?>" width="250" height="200"></a></div>
+                <div class="image1"><a href="detailedHab.php?idUser=<?php echo $idUser ?>&idHabitation=<?php echo $fetch['idhabitation']; ?>&pic=<?php echo $fetch['housepic']; ?>&quartier=<?php echo $fetch['quartier']; ?>&host=<?php echo $fetch['host']; ?>&loyer=<?php echo $fetch['loyer']; ?>"><img src="Pic/<?php echo $fetch['housepic']; ?>" width="250" height="200"></a></div>
                 <br>
                 <div class="texte1"><?php echo $fetch['quartier']; ?></div>
                 <br>
