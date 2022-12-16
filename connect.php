@@ -1,6 +1,6 @@
 <?php
     function connect()
     {
-        return pg_connect("host=localhost port=5432 dbname=immobilier user=postgres password=root");
+        return pg_connect("host=localhost port=5432 dbname=Immobilier user=postgres password=root");
     }       
 ?>
