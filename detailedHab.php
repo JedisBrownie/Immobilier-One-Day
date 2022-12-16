@@ -29,7 +29,7 @@
     <div id="menu">
         <div id="logo"><img src="Pic/th.jpg" width="100px" heigth="75px"></div>
         <div id="recherche">
-            <form action="treatReservation.php">
+            <form action="treatRecherche.php">
                 <input type="text" placeholder="Commencez votre recherche">
                 <input type="submit" value="Cliquez ici">
             </form>
@@ -50,20 +50,21 @@
             <div id="detail"><p><?php echo $fetchHabitation['chambre'] ?> Chambre. <?php echo $fetchHabitation['douche'] ?> Douche. <?php echo $fetchHabitation['balcon'] ?> Balcon et <?php echo $fetchHabitation['salon'] ?> Piece de vie</p></div>
 
             <div id="reservation">
-                <form action="treatReserv.php">
-                <div id="prix">120 Euro par nuit</div>
-                <br>
-                <div id="arrive">
-                    <p>Arrive</p>
-                    <input type="date" name="datearrive" id="datearrive">
-                </div>
-                <div id="depart">
-                    <p>Depart</p>
-                    <input type="date" name="datedepart" id="datedepart">
-                </div>
-                <div id="but"><input type="submit" value="Reservez"></div>
-            </div>
-            </form>
+                <form action="treatReservation.php?idHabitation=<?php echo $idHabitation; ?>&idUser=<?php echo $idUser; ?>" method="POST">
+                    <div id="prix"><?php echo $fetchHabitation['loyer']?> Euro par nuit</div>
+                    <br>
+                    <div id="arrive">
+                        <p>Arrive</p>
+                        <input type="date" name="datearrive" id="datearrive">
+                    </div>
+                    <div id="depart">
+                        <p>Depart</p>
+                        <input type="date" name="datedepart" id="datedepart">
+                    </div>
+                    <div id="but"><input type="submit" value="Reservez"></div>
+                    <div id="locataires"><input type="number" name="locataires" placeholder="Nombre Locataires"></div>
+                    </div>
+                </form>
         </div>
         <a href="home.php?idUser=<?php echo $idUser; ?>">Retour</a>
 </body>
