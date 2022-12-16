@@ -1,67 +1,47 @@
-div a
-{
-    text-decoration: none;
-    color: black;
-}
-
-#ajouter
-{
-    margin-top: 10px;
-    float: right;
-    border: 1px solid pink;
-    width: 150px;
-    height: 35px;
-    text-align: center;
-
-    font-family: gilroy;
-}
-
-
-#ajouter :hover
-{
-
-    background-color: pink;
-}
-
-#image1
+.image1
 {
     border-radius: 15px;
 }
 
-#texte1
+.texte1
 {
     margin-top: -15px;
 }
-#textegris
-{
-    margin-top: -15px;
-}
-
-#prix
+.textegris
 {
     margin-top: -15px;
 }
 
-#cadre1
+.prix
+{
+    margin-top: -15px;
+}
+
+#listHab
 {
     margin-left: 250px;
     display: inline-block;
 }
 
-#cadre2
+.cadre
 {
     display: inline-block;
     margin-left: 50px;
 }
 
-#cadre3
+a
 {
-    display: inline-block;
-    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.4s;
 }
 
-#cadre4
+a:hover
 {
-    display: inline-block;
-    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    transition: 0.4s;
 }
+
