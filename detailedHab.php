@@ -42,23 +42,27 @@
         </div>
     </div>
         <hr>
+        <center>
         <div id="contenu">
-            <center>
+           
                 <div id="titre"><h2>Chambre d'hote de luxe deux fois centrale avec balcon</h2></div>
                 <div id="saryList">
                     <div id="sary1"><img src="Pic/<?php echo $picture; ?>" width="400px" height = "400px"></div>
                     <div id="sarykely">
                     <div id="sary2"><img src="Pic/<?php echo $imagedress1;?>" width="205px" height ="205px"></div>
-                    <div id="sary2"><img src="Pic/sary2.jpg" width="205px" height ="205px"></div>
+                    <div id="sary2"><img src="Pic/<?php echo $imagedress2;?>"width="205px" height ="205px"></div>
                     </div>
-            </center>
+          
             </div>
+            </center>
+            <br>
 
             <center>
             <div id="detail"><p><?php echo $fetchHabitation['chambre'] ?> Chambre. <?php echo $fetchHabitation['douche'] ?> Douche. <?php echo $fetchHabitation['balcon'] ?> Balcon et <?php echo $fetchHabitation['salon'] ?> Piece de vie</p></div>
             </center>
-
+            <center>
             <div id="reservation">
+            <br>
                 <form action="treatReservation.php?idHabitation=<?php echo $idHabitation; ?>&idUser=<?php echo $idUser; ?>" method="POST">
                     <div id="prix"><?php echo $fetchHabitation['loyer']; ?> Euro par nuit</div>
                     <br>
@@ -74,7 +78,12 @@
                     <div id="locataires"><input type="number" name="locataires" placeholder="Nombre Locataires"></div>
                     </div>
                 </form>
+                
         </div>
+        </center>
+        <br>
+        <center>
         <a href="home.php?idUser=<?php echo $idUser; ?>">Retour</a>
+        </center>
 </body>
 </html>

@@ -24,11 +24,8 @@
 #reservation
 {
     width: 290px;
-    float: right;
-    margin-right: 1050px;
     margin-top: -30px;
 }
-
 #arrive
 {
     padding-left: 5px;
@@ -53,5 +50,9 @@
 {
     float: right;
     margin-right: 35px;
+    margin-top: 15px;
+}
+#locataires
+{
     margin-top: 15px;
 }
