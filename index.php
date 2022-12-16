@@ -24,7 +24,7 @@
                             <i></i>
                         </div>
                         <div class="links">
-                            <a href="">Forgot password</a>
+                                <br>
                             <a href="singUp.php">SingUp</a>
                         </div>
                         <a href="home.php">

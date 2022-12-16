@@ -16,9 +16,7 @@
             header('Location: singUp.php');
         }
 
-    if ($assoc != null) 
-    {
-       header('Location: home.php');
-    }
+      header('Location: home.php');
+   
     
 ?>
