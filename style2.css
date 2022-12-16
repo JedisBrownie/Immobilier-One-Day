@@ -1,0 +1,44 @@
+#logo
+{
+    display: inline-block;
+}
+
+#recherche
+{   
+    float: right;
+    margin-top: 25px;
+    margin-right: 1300px;
+    display: inline-block;
+}
+
+#sary1
+{
+    display: inline-block;
+}
+
+#sarykely
+{
+    display: inline-block;
+}
+
+#reservation
+{
+    width: 500px;
+    background-color: grey;
+}
+
+#arrive
+{
+    display: inline-block;
+}
+
+#arrive-
+{
+    margin-left: 10px;
+}
+
+#depart
+{
+    margin-left: 15px;
+    display: inline-block;
+}
