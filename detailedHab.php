@@ -1,5 +1,7 @@
 <?php 
     include('function.php');
+
+    $error = isset($_GET['error']) ? $_GET['error'] : '';
 ?>
 <?php 
     session_start();
@@ -61,7 +63,7 @@
             <center>
                 <div id="reservation">
             <br>
-                <form action="treatReservation.php?idHabitation=<?php echo $idHabitation; ?>&idUser=<?php echo $idUser; ?>&loyer=<?php echo $fetchHabitation['loyer']; ?>" method="POST">
+                <form action="#" method="POST">
                     <div id="prix"><?php echo $fetchHabitation['loyer']; ?> Euro par nuit</div>
                     <br>
                     <div id="arrive">

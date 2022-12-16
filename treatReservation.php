@@ -27,6 +27,13 @@
         }
     }
 
-    
-    $query = reservation($idHabitation, $idUser, $locataires, $datearrive, $datedepart);
+        if ($verify == 0) 
+        {
+            $query = reservation($idHabitation, $idUser, $locataires, $datearrive, $datedepart);        
+        }
+        if ($verify == 1) 
+        {
+            header('Location: detailedHab.php?idUser='.$idUser."&error=1");
+        }
+
 ?>
