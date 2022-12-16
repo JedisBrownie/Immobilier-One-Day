@@ -25,7 +25,6 @@
         <hr>
         <h2 id="titre1"> <center> Homes around the World </center></h2>
         <h1 id="titre2"> <center> Discover beautiful houses with all the comfort of home. </center></h1>
-
         <div id="listHab">
             <?php while ($fetch = pg_fetch_assoc($query)) { ?>
             <div class="cadre">

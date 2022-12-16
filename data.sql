@@ -45,7 +45,7 @@ CREATE TABLE images
 (
     idHabitation int,
     photoDressin1 varchar(30),
-    photoDressing2 varchar(30),
+    photoDressin2 varchar(30),
      FOREIGN KEY(idHabitation)REFERENCES habitation(idHabitation)
 );
 
@@ -109,21 +109,21 @@ VALUES('9','6', 2, '11/25/2022','11/30/2022');
 INSERT INTO RESERVATION (idHabitation,idUser,nbLocataire,DateDebutReservation,DateFinReservation)
 VALUES('7','7',4 ,'10/01/2022','11/11/2022');
 
-INSERT INTO images(idHabitation,photoDressin1,photoDressing2)
+INSERT INTO images(idHabitation,photoDressin1,photoDressin2)
 VALUES(1,'14.jpg','15.jpg');
-INSERT INTO images(idHabitation,photoDressin1,photoDressing2)
+INSERT INTO images(idHabitation,photoDressin1,photoDressin2)
 VALUES(2,'16.jpg','17.jpg');
-INSERT INTO images(idHabitation,photoDressin1,photoDressing2)
+INSERT INTO images(idHabitation,photoDressin1,photoDressin2)
 VALUES(3,'18.jpg','19.jpg');
-INSERT INTO images(idHabitation,photoDressin1,photoDressing2)
+INSERT INTO images(idHabitation,photoDressin1,photoDressin2)
 VALUES(4,'20.jpg','21.jpg');
-INSERT INTO images(idHabitation,photoDressin1,photoDressing2)
+INSERT INTO images(idHabitation,photoDressin1,photoDressin2)
 VALUES(5,'22.jpg','23.jpg');
-INSERT INTO images(idHabitation,photoDressin1,photoDressing2)
+INSERT INTO images(idHabitation,photoDressin1,photoDressin2)
 VALUES(6,'24.jpg','25.jpg');
-INSERT INTO images(idHabitation,photoDressin1,photoDressing2)
+INSERT INTO images(idHabitation,photoDressin1,photoDressin2)
 VALUES(7,'26.jpg','27.jpg');
-INSERT INTO images(idHabitation,photoDressin1,photoDressing2)
+INSERT INTO images(idHabitation,photoDressin1,photoDressin2)
 VALUES(8,'28.jpg','29.jpg');
-INSERT INTO images(idHabitation,photoDressin1,photoDressing2)
+INSERT INTO images(idHabitation,photoDressin1,photoDressin2)
 VALUES(9,'30.jpg','31.jpg');
