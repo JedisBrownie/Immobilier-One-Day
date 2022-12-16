@@ -29,7 +29,7 @@ body{
     left: -50%;
     width: 380px;
     height: 420px;
-    background: linear-gradient(0deg,transparent,#45f3ff,#45f3ff);
+    background: linear-gradient(0deg,transparent,#45f3ff,);
     transform-origin: bottom right;
     animation: animate 6s linear infinite;
 }
@@ -167,6 +167,7 @@ input[type="submit"]
     border: none;
     outline: none;
     background: #45f3ff;
+    margin-left: 90px;
     padding: 11px 25px;
     width: 100px;
     margin-top: 10px;
