@@ -45,7 +45,7 @@
         $sprintf = sprintf($request, $idHab, $idUser, $nbLocataire, $startDate, $endDate);
 
         $query = pg_query($co, $sprintf);
-        $fetch = pd_fetch_assoc($query);
+        $fetch = pg_fetch_assoc($query);
 
         return $fetch;
     }
