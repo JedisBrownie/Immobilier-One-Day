@@ -59,4 +59,15 @@
 
         return $fetch;
     }
+
+    //select image
+    function selectImage($idHabitation)
+    {
+	    $co = connect();
+	   $request = "SELECT * FROM IMAGES WHERE idHabitation = %d";
+       $sprintf = sprintf($request,$idHabitation);
+       $query = pg_query($co,$sprintf);
+       return $query;
+    }
+
 ?>

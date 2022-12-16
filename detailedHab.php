@@ -11,9 +11,14 @@
     $quartier = $_GET['quartier'];
     $host = $_GET['host'];
     $loyer = $_GET['loyer'];
-
+   
     $selectedHabitation = listHabCustom($idHabitation);
     $fetchHabitation = pg_fetch_assoc($selectedHabitation);
+
+    $selectImage = selectImage($idHabitation);
+    $fetchImage = pg_fetch_assoc($selectImage);
+    $imagedress1 = $fetchImage['photodressin1'];
+    $imagedress2 = $fetchImage['photodressin2'];
 ?>
 
 <!DOCTYPE html>
@@ -38,16 +43,20 @@
     </div>
         <hr>
         <div id="contenu">
-            <div id="titre"><h2>Chambre d'hote de luxe deux fois centrale avec balcon</h2></div>
-            <div id="saryList">
-                <div id="sary1"><img src="Pic/<?php echo $picture; ?>" width="400px" height = "400px"></div>
-                <div id="sarykely">
-                <div id="sary2"><img src="Pic/sary2.jpg" width="205px" height ="205px"></div>
-                <div id="sary2"><img src="Pic/sary2.jpg" width="205px" height ="205px"></div>
-                </div>
+            <center>
+                <div id="titre"><h2>Chambre d'hote de luxe deux fois centrale avec balcon</h2></div>
+                <div id="saryList">
+                    <div id="sary1"><img src="Pic/<?php echo $picture; ?>" width="400px" height = "400px"></div>
+                    <div id="sarykely">
+                    <div id="sary2"><img src="Pic/<?php echo $imagedress1;?>" width="205px" height ="205px"></div>
+                    <div id="sary2"><img src="Pic/sary2.jpg" width="205px" height ="205px"></div>
+                    </div>
+            </center>
             </div>
 
+            <center>
             <div id="detail"><p><?php echo $fetchHabitation['chambre'] ?> Chambre. <?php echo $fetchHabitation['douche'] ?> Douche. <?php echo $fetchHabitation['balcon'] ?> Balcon et <?php echo $fetchHabitation['salon'] ?> Piece de vie</p></div>
+            </center>
 
             <div id="reservation">
                 <form action="treatReserv.php">
