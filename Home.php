@@ -4,6 +4,13 @@
     $query = listHabitation();
 ?>
 
+<?php 
+    session_start();
+
+    $idUser = $_GET['idUser'];
+    echo $idUser;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,7 +91,7 @@
         <div id="listHab">
             <?php while ($fetch = pg_fetch_assoc($query)) { ?>
             <div class="cadre">
-                <div class="image1"><a href="detailedHab.php"><img src="Pic/<?php echo $fetch['housepic']; ?>" width="250" height="200"></a></div>
+                <div class="image1"><a href="detailedHab.php?idUser=<?php echo $idUser ?>&pic=<?php echo $fetch['housepic']; ?>&"><img src="Pic/<?php echo $fetch['housepic']; ?>" width="250" height="200"></a></div>
                 <br>
                 <div class="texte1"><?php echo $fetch['quartier']; ?></div>
                 <br>
