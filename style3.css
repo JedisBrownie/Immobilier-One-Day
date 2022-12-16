@@ -44,4 +44,81 @@ a:hover
     font-size: 25px;
     transition: 0.4s;
 }
+#button
+{
+    float: right;
+    margin-top: -65px;
+}
 
+#modify 
+{
+    display: inline;
+}
+
+#delete 
+{
+    display: inline;
+}
+
+#modify a
+{
+    color: rgb(196, 42, 68);
+    text-decoration: none;
+    display: inline;
+    transition: 1s;
+}
+#modify a:hover
+{
+    color: grey;
+    text-decoration: none;
+    display: inline;
+    transition: 1s;
+}
+
+#delete a
+{
+    color: rgb(196, 42, 68);    
+    text-decoration: none;    
+    display: inline;
+    transition: 1s;
+}
+
+#delete a:hover
+{
+    color: gray;    
+    text-decoration: none;    
+    display: inline;
+    transition: 1s;
+}
+
+#logout a
+{
+    margin-top: 15px;
+    float: right;
+    text-decoration: none ;
+    border: 1px solid rgb(196, 42, 68);
+    width: 150px;
+    height: 35px;
+    color: rgb(196, 42, 68);
+    text-align: center;
+    padding-top: 10px;
+    font-family: gilroy;
+    transition: 1s;
+    margin-right: 100px;
+} 
+
+#logout a:hover
+{
+    background-color: rgb(196, 42, 68);
+    float: right;
+    text-decoration: none ;
+    border: 1px solid rgb(196, 42, 68);
+    width: 145px;
+    height: 35px;
+    color: white;
+    font-family: gilroy;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 15px;
+    transition: 1s;
+}

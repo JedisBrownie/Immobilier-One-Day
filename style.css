@@ -17,52 +17,8 @@
 
 }
 
-#button
-{
-    float: right;
-    margin-top: -65px;
-}
 
-#modify 
-{
-    display: inline;
-}
 
-#delete 
-{
-    display: inline;
-}
-
-#modify a
-{
-    color: rgb(196, 42, 68);
-    text-decoration: none;
-    display: inline;
-    transition: 1s;
-}
-#modify a:hover
-{
-    color: grey;
-    text-decoration: none;
-    display: inline;
-    transition: 1s;
-}
-
-#delete a
-{
-    color: rgb(196, 42, 68);    
-    text-decoration: none;    
-    display: inline;
-    transition: 1s;
-}
-
-#delete a:hover
-{
-    color: gray;    
-    text-decoration: none;    
-    display: inline;
-    transition: 1s;
-}
 
 .textegris
 {
