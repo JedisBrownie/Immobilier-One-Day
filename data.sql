@@ -107,6 +107,7 @@ VALUES('5','4', 2, '12/25/2022','12/31/2022');
 INSERT INTO RESERVATION (idHabitation,idUser,nbLocataire,DateDebutReservation,DateFinReservation)
 VALUES('9','6', 2, '11/25/2022','11/30/2022');
 INSERT INTO RESERVATION (idHabitation,idUser,nbLocataire,DateDebutReservation,DateFinReservation)
+<<<<<<< HEAD
 VALUES('7','7',4 ,'10/01/2022','11/11/2022');
 -------------------INSERT IMAGE----------------------
 INSERT INTO images(idHabitation,photoDressin1,photoDressing2)
@@ -127,3 +128,6 @@ INSERT INTO images(idHabitation,photoDressin1,photoDressing2)
 VALUES(8,'28.jpg','29.jpg');
 INSERT INTO images(idHabitation,photoDressin1,photoDressing2)
 VALUES(9,'30.jpg','31.jpg');
+=======
+VALUES('7','7',4 ,'10/01/2022','11/11/2022');
+>>>>>>> 4de0303e2cf6a1371fad9e934d97fedbe9d4e0dc

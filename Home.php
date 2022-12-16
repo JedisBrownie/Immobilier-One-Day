@@ -4,6 +4,12 @@
     $query = listHabitation();
 ?>
 
+<?php 
+    session_start();
+
+    $idUser = $_GET['idUser'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,11 +25,15 @@
         <hr>
         <h2 id="titre1"> <center> Homes around the World </center></h2>
         <h1 id="titre2"> <center> Discover beautiful houses with all the comfort of home. </center></h1>
+<<<<<<< HEAD
         
+=======
+      
+>>>>>>> 4de0303e2cf6a1371fad9e934d97fedbe9d4e0dc
         <div id="listHab">
             <?php while ($fetch = pg_fetch_assoc($query)) { ?>
             <div class="cadre">
-                <div class="image1"><a href="detailedHab.php"><img src="Pic/<?php echo $fetch['housepic']; ?>" width="250" height="200"></a></div>
+                <div class="image1"><a href="detailedHab.php?idUser=<?php echo $idUser ?>&idHabitation=<?php echo $fetch['idhabitation']; ?>&pic=<?php echo $fetch['housepic']; ?>&quartier=<?php echo $fetch['quartier']; ?>&host=<?php echo $fetch['host']; ?>&loyer=<?php echo $fetch['loyer']; ?>"><img src="Pic/<?php echo $fetch['housepic']; ?>" width="250" height="200"></a></div>
                 <br>
                 <div class="texte1"><?php echo $fetch['quartier']; ?></div>
                 <br>

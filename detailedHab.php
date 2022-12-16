@@ -1,3 +1,21 @@
+<?php 
+    include('function.php');
+?>
+
+<?php 
+    session_start();
+
+    $idUser = $_GET['idUser'];
+    $idHabitation = $_GET['idHabitation'];
+    $picture = $_GET['pic'];
+    $quartier = $_GET['quartier'];
+    $host = $_GET['host'];
+    $loyer = $_GET['loyer'];
+
+    $selectedHabitation = listHabCustom($idHabitation);
+    $fetchHabitation = pg_fetch_assoc($selectedHabitation);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,14 +40,14 @@
         <div id="contenu">
             <div id="titre"><h2>Chambre d'hote de luxe deux fois centrale avec balcon</h2></div>
             <div id="saryList">
-                <div id="sary1"><img src="Pic/image1.jpg" width="400px" height = "400px"></div>
+                <div id="sary1"><img src="Pic/<?php echo $picture; ?>" width="400px" height = "400px"></div>
                 <div id="sarykely">
                 <div id="sary2"><img src="Pic/sary2.jpg" width="205px" height ="205px"></div>
                 <div id="sary2"><img src="Pic/sary2.jpg" width="205px" height ="205px"></div>
                 </div>
             </div>
 
-            <div id="detail"><p>1 Chambre. 1 lit. 1 salle de bain et 1 toilette</p></div>
+            <div id="detail"><p><?php echo $fetchHabitation['chambre'] ?> Chambre. <?php echo $fetchHabitation['douche'] ?> Douche. <?php echo $fetchHabitation['balcon'] ?> Balcon et <?php echo $fetchHabitation['salon'] ?> Piece de vie</p></div>
 
             <div id="reservation">
                 <form action="treatReserv.php">
@@ -47,5 +65,6 @@
             </div>
             </form>
         </div>
+        <a href="home.php?idUser=<?php echo $idUser; ?>">Retour</a>
 </body>
 </html>
