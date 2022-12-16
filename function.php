@@ -46,22 +46,27 @@
         return $query;
     }
 
-    // Insert Reservation
-    function reservation($idHab, $idUser, $nbLocataire, $startDate, $endDate)
+    // Select Reservation
+    function listReservation()
+    {   
+        $co = connect();
+
+        $request = "select * from reservation";
+        $query = pg_query($co, $request);
+
+        return $query;
+    }
+    function listReservationCustom($idHabitation)
     {
         $co = connect();
 
-        $request = "insert into reservation(idHabitation, idUser, nbLocataire, datedebutreservation, datefinreservation) values(%d,%d,%d,'%s','%s')";
-
-        $sprintf =sprintf($request, $idHab, $idUser, $nbLocataire, $startDate, $endDate);
-        var_dump($sprintf);
+        $request = "select * from reservation where idHabitation=".$idHabitation;
         $query = pg_query($request);
-        $fetch = pg_fetch_assoc($query);
 
-        return $fetch;
+        return $query;
     }
 
-    //select image
+    //Select image
     function selectImage($idHabitation)
     {
 	    $co = connect();
@@ -70,5 +75,22 @@
        $query = pg_query($co,$sprintf);
        return $query;
     }
+
+    // Insert Reservation
+    function reservation($idHab, $idUser, $nbLocataire, $startDate, $endDate)
+    {
+        $co = connect();
+
+        $request = "insert into reservation(idHabitation, idUser, nbLocataire, datedebutreservation, datefinreservation) values(%d, %d, %d, '%s', '%s')";
+
+        $sprintf =sprintf($request, $idHab, $idUser, $nbLocataire, $startDate, $endDate);
+
+        $query = pg_query($sprintf);
+        $fetch = pg_fetch_assoc($query);
+
+        return $fetch;
+    }
+
+    
 
 ?>

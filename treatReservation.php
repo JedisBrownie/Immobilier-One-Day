@@ -15,6 +15,18 @@
         $datedepart = $_SESSION['datedepart'];
         $locataires = $_SESSION['locataires'];
 
+    $queryVerify = listReservationCustom($idHabitation);
+
+    $verify = 0;
+    while($fetchVerify = pg_fetch_assoc($queryVerify))
+    {
+        if ($datearrive >= $fetchVerify['datedebutreservation'] && $datearrive <= $fetchVerify['datefinreservation']) 
+        {
+            $verify = 1;
+            break;
+        }
+    }
+
+    
     $query = reservation($idHabitation, $idUser, $locataires, $datearrive, $datedepart);
-    var_dump($query);
 ?>
