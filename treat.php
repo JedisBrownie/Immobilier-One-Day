@@ -14,13 +14,13 @@
 
     $assoc = pg_fetch_assoc($querry);
 
-    if (condition) 
+    if ($assoc == null) 
     {
-        # code...
+        header('Location: index.php');
     }
 
-    if (condition) 
+    if ($assoc != null) 
     {
-        # code...
+        header('Location: home.php');
     }
 ?>
