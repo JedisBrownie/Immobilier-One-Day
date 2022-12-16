@@ -2,11 +2,49 @@
 {
     border-radius: 15px;
 }
+#titre1
+{
+    font-family: gilroy;
+}
 
+#titre2
+{
+    font-family: gilroy;
+}
 .texte1
 {
     margin-top: -15px;
+
 }
+
+#button
+{
+    float: right;
+    margin-top: -65px;
+}
+
+#modify 
+{
+    display: inline;
+}
+
+#delete 
+{
+    display: inline;
+}
+
+#modify a
+{
+    text-decoration: none;
+    display: inline;
+}
+
+#delete a
+{
+    text-decoration: none;    
+    display: inline;
+}
+
 .textegris
 {
     margin-top: -15px;
@@ -29,3 +67,34 @@
     margin-left: 50px;
 }
 
+#logout a
+{
+    margin-top: 15px;
+    float: right;
+    text-decoration: none ;
+    border: 1px solid rgb(196, 42, 68);
+    width: 150px;
+    height: 35px;
+    color: rgb(196, 42, 68);
+    text-align: center;
+    padding-top: 10px;
+    font-family: gilroy;
+    transition: 1s;
+    margin-right: 100px;
+} 
+
+#logout a:hover
+{
+    background-color: rgb(196, 42, 68);
+    float: right;
+    text-decoration: none ;
+    border: 1px solid rgb(196, 42, 68);
+    width: 145px;
+    height: 35px;
+    color: white;
+    font-family: gilroy;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 15px;
+    transition: 1s;
+}

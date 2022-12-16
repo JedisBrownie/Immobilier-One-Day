@@ -20,12 +20,11 @@
     <title>House List</title>
 </head>
 <body>
-
+        <div id="logout"><a href="treatLogout.php">Log Out</a></div>
         <img src="Pic/th.jpg" width="100px" heigth="75px">
         <hr>
         <h2 id="titre1"> <center> Homes around the World </center></h2>
         <h1 id="titre2"> <center> Discover beautiful houses with all the comfort of home. </center></h1>
-      
         <div id="listHab">
             <?php while ($fetch = pg_fetch_assoc($query)) { ?>
             <div class="cadre">
@@ -36,6 +35,10 @@
                 <div class="textegris"><?php echo $fetch['host']; ?></div>
                 <br>
                 <div class="prix"><?php echo $fetch['loyer']; ?></div>
+                <div id="button">
+                    <div id="modify"><a href="">Modify</a></div>
+                    <div id="modify"><a href="">Delete</a></div>
+                </div>
             </div>
             <?php } ?>
         </div>

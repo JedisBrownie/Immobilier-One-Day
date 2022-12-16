@@ -4,5 +4,6 @@
 
     session_start();
 
-    
+    $idHabitation = $_GET['idHabitation'];
+    $idUser = $_GET['idUser'];
 ?>
