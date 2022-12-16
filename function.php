@@ -36,7 +36,7 @@
         return $query;
     }
 
-    // Reservation
+    // Insert Reservation
     function reservation($idHab, $idUser, $nbLocataire, $startDate, $endDate)
     {
         $co = connect();

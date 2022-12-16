@@ -1,3 +1,14 @@
+<?php 
+    require('connect.php');
+    include('function.php');
+?>
+
+<?php 
+    session_start();
+
+    $idUser = $_GET['idUser'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +33,7 @@
         <div id="contenu">
             <div id="titre"><h2>Chambre d'hote de luxe deux fois centrale avec balcon</h2></div>
             <div id="saryList">
-                <div id="sary1"><img src="Pic/image1.jpg" width="400px" height = "400px"></div>
+                <div id="sary1"><img src="Pic/" width="400px" height = "400px"></div>
                 <div id="sarykely">
                 <div id="sary2"><img src="Pic/sary2.jpg" width="205px" height ="205px"></div>
                 <div id="sary2"><img src="Pic/sary2.jpg" width="205px" height ="205px"></div>
