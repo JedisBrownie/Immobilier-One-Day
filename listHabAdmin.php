@@ -11,8 +11,8 @@
 
         <img src="Pic/th.jpg" width="100px" heigth="75px">
         <hr>
-        <h2>Homes around the World</h2>
-        <h1>Discover beautiful houses with all the comfort of home.</h1>
+        <h2 id="titre1"> <center> Homes around the World </center></h2>
+        <h1 id="titre2"> <center> Discover beautiful houses with all the comfort of home. </center></h1>
         <div id="list1">
             <div id="cadre1">
                 <div id="image1"><img src="Pic/image1.jpg" width="250px" height="200px"></div>
