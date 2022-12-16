@@ -2,6 +2,8 @@
     include('function.php');
 
     $query = listHabitation();
+
+    $idUser = $_GET['idUser'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
