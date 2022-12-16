@@ -14,6 +14,8 @@
 
     $assoc = pg_fetch_assoc($querry);
 
+    $idUser = $assoc['iduser'];
+
     if ($assoc == null) 
     {
         header('Location: index.php');
