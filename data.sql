@@ -67,26 +67,26 @@ VALUES('Paul','paul123456','paul@gamil.com',1);
 
 -------------INSERTION HABITAION--------------
 INSERT INTO HABITATION(Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic) 
-VALUES('Analakely',1,4,1,2,2, 700, 'Michel', null);
+VALUES('Analakely',1,4,1,2,2, 700, 'Michel', '1.jpg');
 INSERT INTO HABITATION(Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic) 
-VALUES('Behoririka',2,5,1,1,1, 584, 'Kareen', null);
+VALUES('Behoririka',2,5,1,1,1, 584, 'Kareen', '2.jpg');
 INSERT INTO HABITATION(Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic) 
-VALUES('Itaosy',1,1,1,1,1, 900, 'Jean', null);
+VALUES('Itaosy',1,1,1,1,1, 900, 'Jean', '3.jpg');
 INSERT INTO HABITATION(Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic) 
-VALUES('Andraharo',1,3,1,1,1, 806, 'Richard', null);
+VALUES('Andraharo',1,3,1,1,1, 806, 'Richard', '4.jpg');
 INSERT INTO HABITATION(Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic) 
-VALUES('Adoharanofotsy',2,2,4,2,2, 659, 'Loic', null);
+VALUES('Adoharanofotsy',2,2,4,2,2, 659, 'Loic', '5.jpg');
 
 INSERT INTO HABITATION (Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic)
-VALUES('Ankadidramama',1,2,1,2,2, 690, 'Paul', null);
+VALUES('Ankadidramama',1,2,1,2,2, 690, 'Paul', '6.jpg');
 INSERT INTO HABITATION (Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic)
-VALUES('Ankorondrano',1,5,2,2,2, 870, 'Anna', null);
+VALUES('Ankorondrano',1,5,2,2,2, 870, 'Anna', '7.jpg');
 INSERT INTO HABITATION (Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic)
-VALUES('Ankadifotsy',1,1,1,1,1, 508, 'Chris', null);
+VALUES('Ankadifotsy',1,1,1,1,1, 508, 'Chris', '8.jpg');
 INSERT INTO HABITATION (Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic)
-VALUES('Anosizato',2,2,2,2,1, 686, 'Lory', null);
+VALUES('Anosizato',2,2,2,2,1, 686, 'Lory', '9.jpg');
 INSERT INTO HABITATION (Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic)
-VALUES('Ambohimiadana',1,1,2,2,1, 847, 'Romuald', null);
+VALUES('Ambohimiadana',1,1,2,2,1, 847, 'Romuald', '10.jpg');
 
 --------------------INSERT RESERVATION-------------
 INSERT INTO RESERVATION(idHabitation,idUser,nbLocataire,DateDebutReservation,DateFinReservation)

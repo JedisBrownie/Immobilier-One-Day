@@ -84,9 +84,12 @@
         <div id="listHab">
             <?php while ($fetch = pg_fetch_assoc($query)) { ?>
             <div class="cadre">
-                <div class="image1"><a href="detailedHab.php"><img src="<?php echo $fetch['housepic']; ?>" width="250" height="200"></a></div>
+                <div class="image1"><a href="detailedHab.php"><img src="Pic/<?php echo $fetch['housepic']; ?>" width="250" height="200"></a></div>
+                <br>
                 <div class="texte1"><?php echo $fetch['quartier']; ?></div>
+                <br>
                 <div class="textegris"><?php echo $fetch['host']; ?></div>
+                <br>
                 <div class="prix"><?php echo $fetch['loyer']; ?></div>
             </div>
             <?php } ?>
