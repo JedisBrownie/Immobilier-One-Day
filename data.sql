@@ -127,3 +127,5 @@ INSERT INTO images(idHabitation,photoDressin1,photoDressin2)
 VALUES(8,'28.jpg','29.jpg');
 INSERT INTO images(idHabitation,photoDressin1,photoDressin2)
 VALUES(9,'30.jpg','31.jpg');
+INSERT INTO images(idHabitation,photoDressin1,photoDressin2)
+VALUES(10,'13.jpg','12.jpg');

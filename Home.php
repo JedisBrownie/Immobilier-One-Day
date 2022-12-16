@@ -34,8 +34,11 @@
                 <br>
                 <div class="textegris"><?php echo $fetch['host']; ?></div>
                 <br>
-                <div class="prix"><?php echo $fetch['loyer']; ?></div>
-
+                <div class="prix">$<?php echo $fetch['loyer']; ?></div>
+                <div id="button">
+                    <div id="modify"><a href="">Modify</a></div>
+                    <div id="modify"><a href="">Delete</a></div>
+                </div>
             </div>
             <?php } ?>
         </div>
