@@ -29,8 +29,8 @@ create table reservation
     idReservation serial
     idHabitation varchar(20),
     idUser int,
-    DateDebutReservation timestamp(1),
-    DateFinReservation timestamp(1)
+    DateDebutReservation date,
+    DateFinReservation date,
     FOREIGN KEY(idHabitation)REFERENCES habitation(idHabitation),
     FOREIGN KEY(idUser)REFERENCES users(idUser)
 );
