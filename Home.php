@@ -8,7 +8,6 @@
     session_start();
 
     $idUser = $_GET['idUser'];
-    echo $idUser;
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +25,11 @@
         <hr>
         <h2 id="titre1"> <center> Homes around the World </center></h2>
         <h1 id="titre2"> <center> Discover beautiful houses with all the comfort of home. </center></h1>
+<<<<<<< HEAD
+        
+=======
       
+>>>>>>> 4de0303e2cf6a1371fad9e934d97fedbe9d4e0dc
         <div id="listHab">
             <?php while ($fetch = pg_fetch_assoc($query)) { ?>
             <div class="cadre">

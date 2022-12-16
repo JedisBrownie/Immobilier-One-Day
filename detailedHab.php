@@ -11,6 +11,9 @@
     $quartier = $_GET['quartier'];
     $host = $_GET['host'];
     $loyer = $_GET['loyer'];
+
+    $selectedHabitation = listHabCustom($idHabitation);
+    $fetchHabitation = pg_fetch_assoc($selectedHabitation);
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +47,7 @@
                 </div>
             </div>
 
-            <div id="detail"><p>1 Chambre. 1 lit. 1 salle de bain et 1 toilette</p></div>
+            <div id="detail"><p><?php echo $fetchHabitation['chambre'] ?> Chambre. <?php echo $fetchHabitation['douche'] ?> Douche. <?php echo $fetchHabitation['balcon'] ?> Balcon et <?php echo $fetchHabitation['salon'] ?> Piece de vie</p></div>
 
             <div id="reservation">
                 <form action="treatReserv.php">
@@ -62,5 +65,6 @@
             </div>
             </form>
         </div>
+        <a href="home.php?idUser=<?php echo $idUser; ?>">Retour</a>
 </body>
 </html>
