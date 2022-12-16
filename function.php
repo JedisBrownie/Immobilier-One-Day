@@ -7,7 +7,7 @@
         
         $request = "SELECT * FROM USERS WHERE Nom='%s' and Mdp='%s'";
 
-        $sprintf =($request,$nom,$mdp);
+        $sprintf =sprintf($request,$nom,$mdp);
 
         $querry = pg_query($co,$sprintf);
 

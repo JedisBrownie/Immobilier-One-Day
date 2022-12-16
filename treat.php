@@ -4,12 +4,23 @@
     session_start();
 
     $_SESSION['nom'] = $_POST['name'];
-    $_SESSION['mdp'] = $_POST['pwd'];
-    $_SESSION['mail'] = $_POST['email'];
-    $_SESSION['adm'] = $_POST['admin'];
-    
-    $querry = insertMembre($_SESSION['nom'],$_SESSION['mdp'],$_SESSION['mail'],$_SESSION['adm']);
+
+    $_SESSION['pwd'] = $_POST['password'];
+
+    $nom = $_SESSION['nom'];
+    $mdp = $_SESSION['pwd'];
+
+    $querry = logIn($nom,$mdp);
+
     $assoc = pg_fetch_assoc($querry);
 
-    
+    if ($assoc == null) 
+    {
+        header('Location: index.php');
+    }
+
+    if ($assoc != null) 
+    {
+        header('Location: home.php');
+    }
 ?>

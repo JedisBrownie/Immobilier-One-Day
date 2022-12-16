@@ -1,7 +1,3 @@
-create user immobilier identified by immobilier;
-grant dba to immobilier;
-
-
 
 -- User
 CREATE TABLE users
@@ -39,8 +35,7 @@ create table reservation
     FOREIGN KEY(idUser)REFERENCES users(idUser)
 );
 
---------SEQUENCE USER-----------------------
-CREATE SEQUENCE USER_SEQ MINVALUE 0 START WITH 0 INCREMENT BY 1 NOCACHE NOCYCLE;
+
 --------INSERTION USER---------------------
 INSERT INTO USERS(Nom,Mdp,Email,estAdmin) 
 VALUES('Toky','toky123456','tokyramanalina@gamil.com',0);
