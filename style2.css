@@ -1,0 +1,50 @@
+#logo
+{
+    display: inline-block;
+}
+
+#recherche
+{   
+    float: right;
+    margin-top: 25px;
+    margin-right: 1300px;
+    display: inline-block;
+}
+
+#sary1
+{
+    display: inline-block;
+}
+
+#sarykely
+{
+    display: inline-block;
+}
+
+#reservation
+{
+    width: 290px;
+    float: right;
+    margin-right: 1090px;
+    margin-top: -30px;
+}
+
+#arrive
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+
+#depart
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    border: 1px solid black;
+    margin-left: -5px;
+    display: inline-block;
+}
