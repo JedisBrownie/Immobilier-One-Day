@@ -42,28 +42,28 @@ create table reservation
 
 --------INSERTION USER---------------------
 INSERT INTO USERS(Nom,Mdp,Email,estAdmin) 
-VALUES('Toky','toky123456','tokyramanalina@gamil.com',0);
+VALUES('Toky','toky123456','tokyramanalina@gamil.com',1);
 
 INSERT INTO USERS(Nom,Mdp,Email,estAdmin)
-VALUES('Judichael','judi123456','judichael@gamil.com',0);
+VALUES('Judichael','judi123456','judichael@gamil.com',1);
 
 INSERT INTO USERS(Nom,Mdp,Email,estAdmin)
-VALUES('Natana','natana123456','natana@gamil.com',0);
+VALUES('Natana','natana123456','natana@gamil.com',1);
 
 INSERT INTO USERS(Nom,Mdp,Email,estAdmin)
-VALUES('Rudy','rudy123456','rudy@gamil.com',1);
+VALUES('Rudy','rudy123456','rudy@gamil.com',0);
 
 INSERT INTO USERS(Nom,Mdp,Email,estAdmin)
-VALUES('Lory','lory123456','lory@gamil.com',1);
+VALUES('Lory','lory123456','lory@gamil.com',0);
 
 INSERT INTO USERS(Nom,Mdp,Email,estAdmin)
-VALUES('Loic','loic123456','loic@gamil.com',1);
+VALUES('Loic','loic123456','loic@gamil.com',0);
 
 INSERT INTO USERS(Nom,Mdp,Email,estAdmin)
-VALUES('Chris','chris123456','chris@gamil.com',1);
+VALUES('Chris','chris123456','chris@gamil.com',0);
 
 INSERT INTO USERS(Nom,Mdp,Email,estAdmin)
-VALUES('Paul','paul123456','paul@gamil.com',1);
+VALUES('Paul','paul123456','paul@gamil.com',0);
 
 -------------INSERTION HABITAION--------------
 INSERT INTO HABITATION(Quartier,Salon,Chambre,Douche,Toilette,Balcon,loyer,host,HousePic) 
