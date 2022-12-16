@@ -1,3 +1,9 @@
+<?php
+    include('function.php');
+
+    $query = listHabitation();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +19,7 @@
         <hr>
         <h2 id="titre1"> <center> Homes around the World </center></h2>
         <h1 id="titre2"> <center> Discover beautiful houses with all the comfort of home. </center></h1>
-        <div id="list1">
+        <!-- <div id="list1">
             <div id="cadre1">
                 <div id="image1"><a href="detailedHab.php"><img src="Pic/image1.jpg" width="250px" height="200px"></a></div>
                 <div id="texte1"><p>Stellenbosch,Afrique du Sud</p></div>
@@ -74,6 +80,16 @@
                 <div id="textegris"><p>5-10 avr .Professionnel</p></div>
                 <div id="prix">144£ par nuit</div>
             </div>
+        </div> -->
+        <div id="listHab">
+            <?php while ($fetch = pg_fetch_assoc($query)) { ?>
+            <div class="cadre">
+                <div class="image1"><a href="detailedHab.php"><img src="<?php echo $fetch['housepic']; ?>" width="250" height="200"></a></div>
+                <div class="texte1"><?php echo $fetch['quartier']; ?></div>
+                <div class="textegris"><?php echo $fetch['host']; ?></div>
+                <div class="prix"><?php echo $fetch['loyer']; ?></div>
+            </div>
+            <?php } ?>
         </div>
 </body>
 </html>

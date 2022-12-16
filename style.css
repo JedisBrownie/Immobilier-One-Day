@@ -1,41 +1,29 @@
-#image1
+.image1
 {
     border-radius: 15px;
 }
 
-#texte1
+.texte1
 {
     margin-top: -15px;
 }
-#textegris
-{
-    margin-top: -15px;
-}
-
-#prix
+.textegris
 {
     margin-top: -15px;
 }
 
-#cadre1
+.prix
+{
+    margin-top: -15px;
+}
+
+#listHab
 {
     margin-left: 250px;
     display: inline-block;
 }
 
-#cadre2
-{
-    display: inline-block;
-    margin-left: 50px;
-}
-
-#cadre3
-{
-    display: inline-block;
-    margin-left: 50px;
-}
-
-#cadre4
+.cadre
 {
     display: inline-block;
     margin-left: 50px;
