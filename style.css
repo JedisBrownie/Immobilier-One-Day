@@ -29,3 +29,20 @@
     margin-left: 50px;
 }
 
+#logout
+{
+    margin-top: 25px;
+    float: right;
+    border: 1px solid pink;
+    width: 100px;
+    height: 35px;
+    text-align: center;
+
+}
+
+a
+{   
+    margin-top: 5px;
+    color: pink;
+    text-decoration: none;
+}

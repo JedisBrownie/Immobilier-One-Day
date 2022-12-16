@@ -21,7 +21,7 @@
     <title>House List</title>
 </head>
 <body>
-
+        <div id="logout"><a href="treatLogout.php">Log Out</a></div>
         <img src="Pic/th.jpg" width="100px" heigth="75px">
         <hr>
         <h2 id="titre1"> <center> Homes around the World </center></h2>
