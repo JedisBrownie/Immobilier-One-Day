@@ -23,6 +23,6 @@
 
     if ($assoc != null) 
     {
-        header('Location: home.php');
+        header('Location: home.php?idUser='.$idUser);
     }
 ?>
