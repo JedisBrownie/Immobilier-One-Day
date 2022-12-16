@@ -1,6 +1,7 @@
 <?php
     include('connect.php');
 
+    // Login
     function logIn($nom,$mdp)
     {
         $co=connect();
@@ -9,11 +10,12 @@
 
         $sprintf =sprintf($request,$nom,$mdp);
 
-        $querry = pg_query($co,$sprintf);
+        $query = pg_query($co,$sprintf);
 
-        return $querry;
+        return $query;
     }
 
+    // Sign Up
     function insertMembre($nom,$mdp,$email,$estAdmin)
     {
         $co=connect();
@@ -21,5 +23,16 @@
         $sprintf = sprintf($request,$nom,$mdp,$email,$estAdmin);
         $querry = pg_query($co,$sprintf);
         return $querry;
+    }
+
+    // Select listHab
+    function listHabitation()
+    {
+        $co = connect();
+
+        $request = "select * from habitation";
+        $query = pg_query($co, $request);
+
+        return $query;
     }
 ?>
