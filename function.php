@@ -51,9 +51,11 @@
     {
         $co = connect();
 
-        $request = "insert into reservation values(".$idHab.",".$idUser.",".$nbLocataire.",".$startDate.",".$endDate.")";
+        $request = "insert into reservation(idHabitation, idUser, nbLocataire, datedebutreservation, datefinreservation) values(%d,%d,%d,'%s','%s')";
 
-        $query = pg_query($co, $request);
+        $sprintf =sprintf($request, $idHab, $idUser, $nbLocataire, $startDate, $endDate);
+        var_dump($sprintf);
+        $query = pg_query($request);
         $fetch = pg_fetch_assoc($query);
 
         return $fetch;
