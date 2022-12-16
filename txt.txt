@@ -1,0 +1,10 @@
+INSERT INTO RESERVATION(idHabitation,idUser,nbLocataire,DateDebutReservation,DateFinReservation)
+VALUES('1','3', 3, '06/12/2022','12/12/2022');
+INSERT INTO RESERVATION (idHabitation,idUser,nbLocataire,DateDebutReservation,DateFinReservation)
+VALUES('2','5', 1, '12/12/2022','13/12/2022');
+INSERT INTO RESERVATION (idHabitation,idUser,nbLocataire,DateDebutReservation,DateFinReservation)
+VALUES('5','4', 2, '25/12/2022','31/12/2022');
+INSERT INTO RESERVATION (idHabitation,idUser,nbLocataire,DateDebutReservation,DateFinReservation)
+VALUES('9','6', 2, '25/11/2022','30/11/2022');
+INSERT INTO RESERVATION (idHabitation,idUser,nbLocataire,DateDebutReservation,DateFinReservation)
+VALUES('7','7',4 ,'01/10/2022','11/11/2022');
