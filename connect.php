@@ -17,18 +17,22 @@
     //     echo $th;
     // }
     
-    $user ='postgres';
-    $mdp = 'root';
-    $dsn = 'pgsql:host=localhost;port=5432;dbname=immobilier';
+    // $user ='postgres';
+    // $mdp = 'root';
+    // $dsn = 'pgsql:host=localhost;port=5432;dbname=immobilier';
 
-    try 
+    // try 
+    // {
+    //     $data = new PDO($dsn,$user,$mdp);
+    // } 
+    // catch (PDOException $e) 
+    // {
+    //     print "Erreur ! : " . $e->getMessage();
+    //     die();
+    // }
+    function connect()
     {
-        $data = new PDO($dsn,$user,$mdp);
-    } 
-    catch (PDOException $e) 
-    {
-        print "Erreur ! : " . $e->getMessage();
-        die();
+        return pg_connect("host=localhost port=5432 dbname=immobilier user=postgres password=root");
     }
             
 ?>
