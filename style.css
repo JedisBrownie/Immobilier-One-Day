@@ -17,33 +17,8 @@
 
 }
 
-#button
-{
-    float: right;
-    margin-top: -65px;
-}
 
-#modify 
-{
-    display: inline;
-}
 
-#delete 
-{
-    display: inline;
-}
-
-#modify a
-{
-    text-decoration: none;
-    display: inline;
-}
-
-#delete a
-{
-    text-decoration: none;    
-    display: inline;
-}
 
 .textegris
 {
