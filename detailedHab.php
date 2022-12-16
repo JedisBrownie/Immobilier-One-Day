@@ -59,8 +59,7 @@
             </center>
 
             <div id="reservation">
-                <form action="treatReservation.php?idHabitation=<?php echo $idHabitation; ?>&idUser=<?php echo $idUser; ?>" method="POST">
-                    <div id="prix"><?php echo $fetchHabitation['loyer']; ?> Euro par nuit</div>
+                <form action="treatReservation.php?idHabitation=<?php echo $idHabitation; ?>&idUser=<?php echo $idUser; ?>$loyer=<?php echo $fetchHabitation['loyer']; ?>">
                     <br>
                     <div id="arrive">
                         <p>Arrive</p>
